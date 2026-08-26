@@ -1,0 +1,306 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - start
+    - hi
+    - hello
+    - hey
+    - good morning
+    - good evening
+    - hi there
+    - hey bot
+    - greetings
+    - how are you
+    - what's up
+    - yo
+    - salam
+    - assalamualaikum
+    - hello there
+    - hi friend
+
+- intent: provide_technology
+  examples: |
+    - I want to interview for [web development](technology)
+    - My technology is [app development](technology)
+    - I am skilled in [AI](technology)
+    - [web development](technology)
+    - [app development](technology)
+    - [AI](technology)
+    - I specialize in [web development](technology)
+    - I am applying for [app development](technology)
+    - I am interested in [AI](technology)
+    - I know [web development](technology)
+    - I am good at [app development](technology)
+    - I want to be tested on [AI](technology)
+    - [web development](technology) is my skill
+    - [app development](technology) is my area
+    - [AI](technology) is my expertise
+
+- intent: answer_question
+  examples: |
+    - GET retrieves data, POST sends data
+    - GET is used for fetching, POST for submitting
+    - GET puts parameters in the URL, POST in the body
+    - GET is less secure, POST is more secure
+    - GET requests are idempotent, POST requests are not
+    - GET is for reading, POST is for creating
+    - GET has length limits, POST can send large payloads
+    - GET bookmarks work, POST doesn't
+    - GET is cached, POST usually isn't
+    - GET is safe, POST changes server state
+
+    - DOM represents the document structure
+    - DOM is a tree of HTML elements
+    - DOM lets JavaScript manipulate pages
+    - DOM is the browser's model of a webpage
+    - DOM connects HTML with scripts
+    - DOM updates dynamically
+    - DOM nodes represent tags
+    - DOM is accessible via JS APIs
+    - DOM events trigger changes
+    - DOM is the interface between HTML and JS
+
+    - REST API allows communication between systems
+    - REST uses HTTP methods like GET and POST
+    - REST is stateless
+    - REST APIs exchange JSON or XML
+    - REST is a design style for APIs
+    - REST follows resource-based URLs
+    - REST uses CRUD operations
+    - REST is lightweight
+    - REST is scalable
+    - REST is widely adopted
+
+    - Responsive design adapts to screen sizes
+    - Responsive design uses media queries
+    - Responsive design makes websites mobile-friendly
+    - Responsive design ensures usability across devices
+    - Responsive design is flexible layouts
+    - Responsive design uses fluid grids
+    - Responsive design uses relative units
+    - Responsive design improves accessibility
+    - Responsive design is modern standard
+    - Responsive design avoids fixed widths
+
+    - Semantic HTML tags describe meaning
+    - Semantic tags improve accessibility
+    - Semantic tags help SEO
+    - Semantic tags give structure
+    - Semantic tags make code readable
+    - Semantic tags are meaningful elements
+    - Semantic tags aid screen readers
+    - Semantic tags improve maintainability
+
+    - Specificity decides which CSS rule applies
+    - Inline styles override others
+    - IDs are stronger than classes
+    - Classes beat elements
+    - Specificity is rule priority
+    - Specificity resolves conflicts
+    - Specificity is calculated by selectors
+    - Specificity ensures correct styling
+    - Specificity is important in CSS
+    - Specificity prevents unexpected results
+
+    - Cookies store small data
+    - localStorage stores persistent data
+    - sessionStorage clears on tab close
+    - Cookies sent with requests
+    - Storage stays client-side
+    - Cookies expire
+    - localStorage is larger
+    - sessionStorage is temporary
+    - Cookies are for sessions
+    - Storage is modern alternative
+
+    - Client rendering uses browser JS
+    - Server rendering sends HTML
+    - Client rendering is dynamic
+    - Server rendering is faster first load
+    - Client rendering uses frameworks
+    - Server rendering improves SEO
+    - Client rendering is interactive
+    - Server rendering is static
+    - Client rendering loads APIs
+    - Server rendering reduces JS load
+
+    - XHTML is stricter
+    - HTML is forgiving
+    - XHTML requires closing tags
+    - HTML allows loose syntax
+    - XHTML is XML-based
+    - HTML is SGML-based
+    - XHTML enforces lowercase
+    - HTML is flexible
+    - XHTML is strict parsing
+    - HTML is widely used
+
+    - Inline CSS is in tags
+    - External CSS is linked
+    - Inline overrides others
+    - External is reusable
+    - Internal is page-specific
+    - Inline is quick
+    - External is best practice
+    - Internal is limited
+    - External improves maintainability
+
+    - Flutter is Google's UI toolkit
+    - Flutter builds cross-platform apps
+    - Flutter uses Dart language
+    - Flutter compiles to native code
+    - Flutter supports hot reload
+    - Flutter is open source
+    - Flutter has widgets
+    - Flutter is fast
+    - Flutter is popular for startups
+    - Flutter reduces development time
+
+    - Push notifications alert users outside the app
+    - They are messages sent from server to device
+    - They keep users engaged
+    - They can be silent or visible
+    - They require user permission
+    - Push notifications improve retention
+    - Push notifications can be personalized
+    - Push notifications use FCM/APNS
+    - Push notifications are real-time
+    - Push notifications drive re-engagement
+
+    - Native apps run directly on OS
+    - Hybrid apps use web + native
+    - Native apps are faster
+    - Hybrid apps are easier to build
+    - Native apps use SDKs
+    - Hybrid apps use wrappers
+    - Native apps have better UX
+    - Hybrid apps save cost
+    - Native apps access hardware easily
+    - Hybrid apps use one codebase
+
+    - MVC separates model, view, controller
+    - MVC organizes code
+    - MVC improves maintainability
+    - MVC is common in app frameworks
+    - MVC helps scalability
+    - MVC is design pattern
+    - MVC reduces coupling
+    - MVC is structured
+    - MVC is reusable
+    - MVC is modular
+
+    - Fragments are UI parts
+    - Fragments are reusable
+    - Fragments are modular
+    - Fragments are lightweight
+    - Fragments are flexible
+    - Fragments are dynamic
+    - Fragments are containers
+    - Fragments are replaceable
+    - Fragments are Android components
+    - Fragments simplify layouts
+
+    - SwiftUI is Apple's UI framework
+    - SwiftUI uses declarative syntax
+    - SwiftUI is modern
+    - SwiftUI is reactive
+    - SwiftUI is cross-platform Apple
+    - SwiftUI is simple
+    - SwiftUI is fast
+    - SwiftUI is intuitive
+    - SwiftUI is integrated
+    - SwiftUI is future-proof
+
+    - Sync is blocking
+    - Async is non-blocking
+    - Sync waits
+    - Async continues
+    - Sync is sequential
+    - Async is parallel
+    - Sync is simple
+    - Async is efficient
+    - Sync is predictable
+    - Async is scalable
+
+    - DI provides dependencies
+    - DI reduces coupling
+    - DI improves testing
+    - DI is inversion of control
+    - DI is design pattern
+    - DI is flexible
+    - DI is modular
+    - DI is reusable
+    - DI is maintainable
+    - DI is scalable
+
+    - SQLite is lightweight
+    - Realm is object-based
+    - SQLite stores tables
+    - Realm is faster for mobile
+    - SQLite is relational
+    - Realm is modern
+    - SQLite is file-based
+    - Realm is schema-less
+    - SQLite is widely used
+    - Realm is developer-friendly
+
+    - Apps have lifecycle
+    - Lifecycle has states
+    - Lifecycle is managed
+    - Lifecycle is important
+    - Lifecycle is predictable
+
+    - skip
+    - i don't know
+    - idk
+    - pass
+    - move on
+    - next
+    - leave this one
+    - i can't answer
+    - lets skip
+    - let's skip
+    - no idea
+    - not sure
+
+
+- intent: goodbye
+  examples: |
+    - bye
+    - thanks
+    - see you later
+    - goodbye
+    - talk to you later
+    - that's all
+    - end interview
+    - finished
+    - done
+    - exit
+    - quit
+    - stop
+
+- lookup: skip_phrases
+  examples: |
+    - skip
+    - I don't know
+    - pass
+    - move on
+    - next
+    - leave this one
+    - not sure
+    - no idea
+    - continue
+    - let's skip
+
+- regex: numbers
+  examples: |
+    - \d+
+
+- regex: alphanumeric
+  examples: |
+    - [a-zA-Z0-9]+
+
+- regex: code_snippet
+  examples: |
+    - .*[{()}].*

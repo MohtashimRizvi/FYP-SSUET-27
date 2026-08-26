@@ -1,0 +1,69 @@
+version: "3.1"
+stories:
+- story: interview web dev
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: provide_technology
+    entities:
+      - technology: "web development"
+  - action: action_ask_questions
+  - intent: answer_question
+  - action: action_store_answers
+  - intent: answer_question
+  - action: action_store_answers
+  - intent: answer_question
+  - action: action_store_answers
+  - intent: answer_question
+  - action: action_store_answers
+  - intent: answer_question
+  - action: action_store_answers
+  - intent: goodbye
+  - action: action_finalize_interview
+
+- story: interview app dev
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: provide_technology
+    entities:
+      - technology: "app development"
+  - action: action_ask_questions
+  - intent: answer_question
+  - action: action_store_answers
+  - intent: answer_question
+  - action: action_store_answers
+  - intent: answer_question
+  - action: action_store_answers
+  - intent: answer_question
+  - action: action_store_answers
+  - intent: answer_question
+  - action: action_store_answers
+  - intent: goodbye
+  - action: action_finalize_interview
+
+- story: interview AI
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: provide_technology
+    entities:
+      - technology: "AI"
+  - action: action_ask_questions
+  - intent: answer_question
+  - action: action_store_answers
+  - intent: answer_question
+  - action: action_store_answers
+  - intent: answer_question
+  - action: action_store_answers
+  - intent: answer_question
+  - action: action_store_answers
+  - intent: answer_question
+  - action: action_store_answers
+  - intent: goodbye
+  - action: action_finalize_interview
+
+- story: simple goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye

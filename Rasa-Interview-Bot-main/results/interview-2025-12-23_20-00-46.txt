@@ -1,0 +1,22 @@
+Q1: What are semantic HTML tags?
+Answer: these are different kind of HTML tags used in the body
+Score: 4/10
+
+Q2: How does CSS specificity work?
+Answer: it is used to design web pages and give it a pattern lock
+Score: 2/10
+
+Q3: Explain the difference between client-side and server-side rendering.
+Answer: client and server side rendering specifically use browser and HTML
+Score: 9/10
+
+Q4: What is the difference between HTML and XHTML?
+Answer: difference in HTML and XHTML is of Syntax and HTML is strict
+Score: 9/10
+
+Q5: Explain the concept of responsive design.
+Answer: it is related to the layout of the screen being responsive
+Score: 8/10
+
+Total: 32/50
+Skipped: 0
